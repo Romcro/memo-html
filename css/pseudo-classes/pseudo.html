@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <link rel="stylesheet" href="pseudo.css">
+</head>
+
+<body>
+
+    <h1>Pseudos classes</h1>
+
+    <p>Les pseudo-classes vont nous permettre d’appliquer des styles à des éléments HTML uniquement lorsque ceux-ci sont
+        dans un certain état (cliqués, activés, etc.). <br><br>
+
+        Il existe de nombreuses pseudo-classes en CSS. Toutes les pseudo-classes s’utilisent de manière similaire (la
+        syntaxe sera toujours la même), nous n’allons en étudier que quelques unes durant ce cours.<br><br>
+        Ainsi, il vous suffira de comprendre comment appliquer une pseudo-classe pour savoir toutes les utiliser, à
+        condition bien évidemment de savoir à quoi correspond chaque pseudo-classe.<br><br>
+        Il existe aujourd’hui plus de 50 pseudoclasses. Mais elles ne conviennent pas toutes pour déclencher des
+        transitions.</p>
+
+    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes" target="blank">Retrouvez ici un lien vers la
+        liste complète</a>
+
+
+    <h2>Voici une liste des pseudo-classe les plus couramment utilisées</h2>
+
+    <ul>
+        <li>:hover, qui est déclenché au survol de la souris ;</li>
+        <li>:active, activé au clic de l'utilisateur (le plus souvent pour les liens et boutons) ;</li>
+        <li>:focus, qui se déclenche lorsque son élément reçoit le focus (soit il est sélectionné à l'aide du clavier,
+            soit il est activé avec la souris) ;/li>
+        <li>:valid, dont la validation du contenu s'effectue correctement par rapport au type de donnée attendu ;</li>
+        <li>:invalid, qui inversement, correspond à un élément dont la validation du contenu ne s'effectue pas
+            correctement par rapport au type de donnée attendu ;</li>
+        <li>:not(), qui correspond à la négation. Elle prend un sélecteur en argument et permet de cibler les éléments
+            qui ne sont pas représentés par cet argument ;</li>
+        <li>:checked, qui correspond aux input de type checkbox, option ou radio qui sont cochés ;</li>
+        <li>:enabled, un élément avec lequel on peut interagir ;</li>
+        <li>:disabled, qui correspond à un élément dont l'interaction a été bloquée.</li>
+    </ul>
+
+    <div class="div1">
+
+        <h2>Exemple hover</h2>
+
+        <a href="" class="btn-hover">Survolez moi</a>
+
+        <img src="images/1.png" alt="">
+
+        <a href="" class="btn-hover-2">Survolez moi</a>
+
+        <img src="images/2.png" alt="">
+
+    </div>
+
+    <h2>Nous verrons d'autres manières d'animer plus naturellement nos transitions dans la partie animation</h2>
+
+
+
+</body>
+
+</html>
