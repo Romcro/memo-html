@@ -1,0 +1,149 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2 {
+
+
+    margin: 30px auto;
+    width: 90%;
+}
+
+p {
+
+    width: 90%;
+    margin: 10px auto;
+    z-index: 1000;
+}
+
+.white {
+
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+}
+
+.fixed {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+main {
+
+    margin: 40px auto;
+
+}
+
+.section-1 {
+
+
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-ex-1 {
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.relative {
+
+    position: relative;
+    top: 60px;
+    left: 30px;
+    border: 3px solid blue;
+}
+
+.section-2 {
+
+
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-ex-2 {
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.absolute {
+
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    border: 3px solid blue;
+    z-index: -1;
+}
+
+.sticky {
+
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: darkgrey;
+}
+
+.remplissage {
+
+    width: 100%;
+    height: 80vh;
+}
+
+.one {
+
+    z-index: 3;
+}
+
+.two {
+
+    z-index: 4;
+}
+
+.three {
+
+    z-index: 5;
+}
+
+.four {
+
+    z-index: 6;
+}
+
+.five {
+
+    z-index: 7;
+}
+
+.six {
+
+    z-index: 8;
+
+}
