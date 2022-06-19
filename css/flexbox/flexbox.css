@@ -1,0 +1,131 @@
+section {
+
+    background-color: purple;
+    padding: 30px;
+    height: 300px;
+    margin-bottom: 100px;
+
+
+}
+
+span {
+
+    font-weight: bold;
+}
+
+div {
+
+    width: 400px;
+    height: 100px;
+    margin: 5px;
+
+}
+
+.divrouge {
+
+    background-color: red;
+
+}
+
+.divjaune {
+
+    background-color: yellow;
+}
+
+.divbleue {
+
+    background-color: blue;
+}
+
+#demo {
+
+    margin-bottom: 100px;
+}
+
+#demo1 {
+
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#demo2 {
+
+    display: flex;
+    flex-direction: row;
+    /* row-reverse;, column, column-reverse;*/
+    margin-bottom: 100px;
+}
+
+
+
+#demo3 {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* no-wrap, wrap-reverse; */
+    margin-bottom: 100px;
+
+}
+
+#demo4 {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* no-wrap, wrap-reverse; */
+    justify-content: center;
+    /*space-around,space-evenly, center, start, end, flex-start, flex-end, left, right   */
+    margin-bottom: 100px;
+
+}
+
+#demo5 {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* no-wrap, wrap-reverse; */
+    justify-content: space-between;
+    /*space-around,space-evenly, center, start, end, flex-start, flex-end, left, right   */
+    align-content: center;
+    /*start,space-between, space-around, end */
+
+}
+
+#demo6 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*space-around,space-evenly, center, start, end, flex-start, flex-end, left, right   */
+    align-items: center; /*stretch,center, flex-start, flex-end*/
+
+
+}
+
+
+#demo7 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#demo7 :nth-child(1) {
+
+    height: 250px;
+    align-self: start;
+    /* stretch, center, start, end */
+
+}
+
+#demo7 :nth-child(2) {
+
+    height: 50px;
+    align-self: flex-end;
+
+}
+
+#demo7 :nth-child(3) {
+
+    align-self: center;
+    height: 20px;
+
+
+}
