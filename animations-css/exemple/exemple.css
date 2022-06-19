@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+
+    background-color: aqua;
+    text-align:center;
+    font-family: 'Staatliches', cursive;
+}
+
+
+#test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    height: 170px;
+    width: 170px;
+    background-color: red;
+    margin: 2%;
+  }
+  
+  .scale {
+    transition-property: transform ease-in-out;
+    transition-duration: 730ms;
+    transform: scale(1);
+  }
+  .scale:hover {
+    transform: scale(3, 0.5);
+    background-color: yellowgreen;
+  }
+  
+  .scaleX {
+    transition-property: transform ease-in-out;
+    transition-duration: 730ms;
+    transform: scale(1);
+  }
+  .scaleX:hover {
+    transform: scaleX(2);
+    background-color: yellowgreen;
+  }
+  
+  .scaleY {
+    transition-property: transform ease-in-out;
+    transition-duration: 730ms;
+    transform: scale(1);
+  }
+  .scaleY:hover {
+    transform: scaleY(2);
+    background-color: yellowgreen;
+  }
+  
+  .translate {
+    transition-property: transform ease-in-out;
+    transition-duration: 730ms;
+    transform: translate;
+  }
+  .translate:hover {
+    transform: translate(150px, -45px);
+    background-color: yellowgreen;
+  }
+  
+  .rotate {
+    transition-property: transform ease-in-out;
+    transition-duration: 730ms;
+    transform: rotate;
+  }
+  .rotate:hover {
+    transform: rotate(1turn);
+    background-color: yellowgreen;
+  }
+  
+  .spin {
+    animation: spin 8s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  .rotate2 {
+    transform: scale(1) rotate(0deg);
+    overflow: hidden;
+    transition: transform 330ms ease-in-out;
+  }
+  .rotate2 span {
+    transform: translateY(250%);
+    transition: transform 280ms ease-out 50ms;
+    display: block;
+  }
+  .rotate2:hover {
+    transform: scale(1.3) rotate(-90deg);
+    background-color: yellowgreen;
+  }
+  .rotate2:hover span {
+    transform: translateY(0);
+    color: blueviolet;
+  }
+  
+  .skew {
+    transform: skew();
+    transition: transform 330ms ease-in-out;
+  }
+  .skew:hover {
+    transform: skew(35deg, 35deg);
+  }
+  
+  .skewX {
+    transform: skewX();
+    transition: transform 330ms ease-in-out;
+  }
+  .skewX:hover {
+    transform: skewX(45deg);
+  }
+  
+  .skewY {
+    transform: skewY();
+    transition: transform 330ms ease-in-out;
+  }
+  .skewY:hover {
+    transform: skewY(45deg);
+  }
+  
+  /**** TRANSFORMATION 3D *****/
+  .perspective1 {
+    transform: perspective() rotateX();
+    transition: transform 330ms ease-in-out;
+  }
+  .perspective1:hover {
+    transform: perspective(55px) rotateX(45deg);
+  }
+  
+  .box2 {
+    height: 70px;
+    width: 470px;
+    border: solid 3px red;
+    margin: 2%;
+  }
+  .box2 .bar {
+    height: 70px;
+    background-color: blue;
+    transform: scaleX(0);
+  }
+
+  .form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__group input {
+    border: none;
+    border-radius: 100rem;
+    color: #27a782;
+    font-size: 2.5rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    transition: background-color 500ms;
+  }
+  .form__group input:focus {
+    border: 2px solid #6300a0;
+  }
+  .form__group input:invalid {
+    background: #b20a37;
+    border: 2px solid #b20a37;
+    color: #fff;
+  }
+  .form__group input:not(:focus):invalid {
+    background: #b20a37;
+    border: 2px solid #b20a37;
+    color: #fff;
+  }
+
+  #comingsoon {
+
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dot {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 12px;
+    background-color: orangered;
+
+}
+
+#dotone {
+
+    animation: bounce1 1s ease infinite;
+}
+
+@keyframes bounce1 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+#dottwo {
+
+    animation: bounce2 1s ease infinite;
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    50% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+#dotthree {
+
+    animation: bounce3 1s ease infinite;
+}
+
+@keyframes bounce3 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    70% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+#h1-wiggle {
+
+
+    color: blue;
+    font-size: 5vh;
+    margin:10vh
+    
+}
+
+#h1-wiggle:hover{
+
+    animation: wiggle 2.5s infinite;
+
+
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    35% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+
+}
