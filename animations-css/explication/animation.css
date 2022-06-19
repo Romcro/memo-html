@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+p {
+
+text-transform:uppercase;
+
+}
+
+/* debut */
+
+.btn {
+    background: #011c37;
+    color: #15DEA5;
+    font-size: 1rem;
+    font-family: 'Staatliches', cursive;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* TRANSFORMATION*/
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  
+  .btn:hover {
+  transform: scale(1.25);
+    
+  
+  }
+
+  /* debut */
+
+    /* MULTIPLE */
+
+.btn-ex2 {
+    width: 20%;
+    margin: 10vh auto;
+    color: #15DEA5;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    border: 4px solid #011c37;
+    
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1.85rem 3rem;
+    position: relative;
+
+    /* TRANSFORMATION*/
+    transition: all 1450ms;
+  }
+  .btn-ex2:hover {
+    transform: scale(1.13);
+    background-color: #011c37;
+    color: yellow;
+  }
+  
+  .btn-ex3 {
+    width: 20%;
+    margin: 10vh auto;
+    color: #011c37;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    background-color: rgba(1, 28, 55, 0);
+    border: 4px solid #011c37;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 3rem;
+    overflow: hidden;
+    padding: 1.85rem 3rem;
+    position: relative;
+    transition: transform 850ms, background-color 2450ms, color 1450ms;
+  }
+  .btn-ex3:hover {
+    transform: scale(1.15);
+    background-color: #011c37;
+    color:#15DEA5;
+  }
+
+  .btn-ex4 {
+    width: 20%;
+    margin: 10vh auto;
+    color: #15DEA5;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    background-color: rgba(1, 28, 55, 0);
+    border: 4px solid #011c37;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 3rem;
+    overflow: hidden;
+    padding: 1.85rem 3rem;
+    position: relative;
+    transition: transform 450ms, background-color 300ms;
+    transition-delay: 0, 150ms;
+  }
+  .btn-ex4:hover {
+    transform: scale(1.15);
+    background-color: #011c37;
+  }
+
+  .btn-ex5 {
+    width: 20%;
+    margin: 10vh auto 30vh auto;
+    font-family: 'Staatliches', cursive;
+    color: #15DEA5;
+    text-align: center;
+    background-color: rgba(1, 28, 55, 0);
+    border: 4px solid #011c37;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 3rem;
+    overflow: hidden;
+    padding: 1.85rem 3rem;
+    transition-duration: 1730ms;
+    transform: scale,translate,skew;
+  
+  }
+  .btn-ex5:hover {
+    transform: translate(150px, 45px) scale(1.15) skew(25deg, -35deg);
+    background-color: #011c37;
+
+
+/* MULTIPLE */
+
+ /* Courbe de bezier */
+  
+  }
+
+  .container-bezier {
+    -webkit-box-flex: 1;
+    flex: 1 1 1;
+    align-self: center;
+    width: 500px;
+}
+
+
+.linear {
+    background: #e74c3c;
+    color: #fff;
+    width: 80px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-animation: timingFunctionProperty 4s linear infinite;
+    animation: timingFunctionProperty 4s linear infinite;
+}
+
+.ease {
+    background: #e74c3c;
+    color: #fff;
+    width: 80px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-animation: timingFunctionProperty 4s ease infinite;
+    animation: timingFunctionProperty 4s ease infinite;
+}
+
+.ease-in {
+    background: #e74c3c;
+    color: #fff;
+    width: 80px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-animation: timingFunctionProperty 4s ease-in infinite;
+    animation: timingFunctionProperty 4s ease-in infinite;
+}
+
+.ease-out {
+    background: #e74c3c;
+    color: #fff;
+    width: 80px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-animation: timingFunctionProperty 4s ease-out infinite;
+    animation: timingFunctionProperty 4s ease-out infinite;
+}
+
+.ease-in-out {
+    background: #e74c3c;
+    color: #fff;
+    width: 80px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    -webkit-animation: timingFunctionProperty 4s ease-in-out infinite;
+    animation: timingFunctionProperty 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes timingFunctionProperty {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 420px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes timingFunctionProperty {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 420px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+ /* Courbe de bezier */
+
+
+ 
