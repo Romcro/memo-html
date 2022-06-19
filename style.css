@@ -72,6 +72,13 @@ a:hover { color:orange}
     height:auto;
 }
 
+.bouton-memo {
+
+    border: solid 2px #124C94;
+    padding:1em;
+    border-radius:3em;
+}
+
 .zone30 {
 
     background-color: #124C94;
