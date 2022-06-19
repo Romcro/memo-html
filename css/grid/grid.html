@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="grid.css">
+    
+</head>
+<body>
+
+  <h1>Les GRID CSS</h1>
+
+  <p>Les grid sont une forme de grille qui va vous permettre de contenir des élements et les controler facilement grâce à une grille dont vous pourrez choisir les colonnes, les rangées, et créer grâce aux lignes qui la compose des design complexes. <br><br> Pour définir les points de départ et de fin d'un bloc au sein de la grille nous nous servirons des lignes et non des cases. Il y'aura donc toujours une ligne de plus que le nombres de colonnes ou rangées.</p>
+
+  <div id="schema"><img src="images/Fichier 1@300x.png" alt=""></div>
+    <h1>EXEMPLE 1</h1>
+
+    <div class="conteneur-grid">
+      
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    
+      </div>
+
+      <h1>EXEMPLE 2</h1>
+
+      <div class="conteneur-grid-deux">
+        
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+      
+        </div>
+
+
+      <h1>EXEMPLE 3</h1>
+
+      <div class="conteneur-grid-trois">
+        
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+      
+        </div>
+
+        <h1>GRID COMPLEXE</h1>
+
+      <h1>EXEMPLE 4 </h1>
+
+      <p>Dans cet exemple notre grid sera composée de 3 colonnes et 4 rangés, soit 12 cases. Pourtant elle ne contiendra que six blocs, observez le CSS lié pour voir comment nous avons défini leur emplacement </p>
+
+      <div class="wrapper">
+
+        <div class="one">Un</div>
+        <div class="two">Deux</div>
+        <div class="three">Trois</div>
+        <div class="four">Quatre</div>
+        <div class="five">Cinq</div>
+        <div class="six">Six</div>
+
+      </div>
+
+      <h1>Exemple 5 *nouvelle propriété (grid-area)</h1>
+
+      <p>dans cet exemple notre grid compte 6 colonnes et 6 rangées, soit 36 cases mais seulement 5 blocs en observant le fichier CSS vous verrez comment mettre en place la propriété grid-area</p>
+
+      <div class="wrapper-two">
+        <div class="wp-2-div1"><p>div1</p> </div>
+        <div class="wp-2-div2"><p>div2</p> </div>
+        <div class="wp-2-div3"> <h1>div 3</h1> </div>
+        <div class="wp-2-div4"><p>div4</p> </div>
+        <div class="wp-2-div5"><p>div5</p> </div>
+        </div>
+
+      
+    
+</body>
+</html>
