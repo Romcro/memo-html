@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mesure.css">
+</head>
+
+<body>
+
+    <h1>mesure</h1>
+    <p>l'astuce: Ce titre à une font-size de 20vw, regardez comme il se comporte à la réduction d'écran via l'inspecteur</p>
+
+    
+
+    <p>De nombreuses propriétés CSS peuvent se voir attribuer des valeurs dans plusieurs unités possibles.
+        Voici un récapitulatif des unités utilisables.</p> <br><br>
+
+        <h2>Les unités en pixels</h2>
+
+    <p>En pixels. Exemple : width:100px;
+        Dans Explorer, les valeurs attribuées de cette façon sont fixes. Elles le resteront quelle que soient les
+        variations de tailles des caractères et de la page. Dans les autres navigateurs, l'unité "px" varie avec la
+        taille par défaut des polices.
+        Contrairement au point (pt), la taille du pixel (px) est dépendante de la résolution et de la taille de l'écran.
+        C'est donc une unité relative dépendante du périphérique affichant votre page.
+        Lorsque vous définissez une valeur en px, vous devez utiliser un nombre entier.</p> <br><br>
+
+        <h2>Les unités en %</h2>
+
+    <p>En "%". Exemple : width:50%;
+        Les valeurs attribuées de cette façon permettent d'avoir une valeur proportionnelle à la taille de la fenêtre du
+        navigateur ou à l'élément parent de celui pour lequel vous utilisez cette unité. Si vous utilisez des
+        pourcentages dans une propriété liée à la taille des caractères, la valeur obtenue est proportionnelle à la
+        taille de la police par défaut (1"em").
+        Lorsque vous définissez une valeur en %, vous devez utiliser un nombre entier.</p> <br><br>
+
+        <h2>Les unités en em</h2>
+
+    <p>En "em". Exemple : width:1.5em;
+        Les valeurs attribuées de cette façon permettent d'avoir une valeur proportionnelle à la taille des caractères
+        utilisés dans la page. 1em correspond à une hauteur de ligne de 1 caractère, soit 12pt si vous n'avez pas
+        modifié la taille standard des caractères. Petit conseil: en CSS dans body définissez une taille de 16 px et ensuite dans vos titre hn et p jouez avec les em.  Cette unité est donc trés
+        pratique pour modifier votre mise en pager.
+        Vous pouvez utiliser des valeurs décimales du type "1.4em"</p> <br><br>
+
+        <h2>Les unités en vh et vw (ma preferée)</h2>
+
+        <p>En "vh" et "vw". Exemple : Exemple : width:100vw; occupera la totalité de la largeur de votre écran.
+            Ces unités relatives au viewport (taille de l'écran) sont essentielles pour mettre en place un design responsive, et on retrouve : <br><br>
+            La hauteur du viewport  (vh) <br>
+            La largeur du viewport (vw) <br><br>
+
+            Les unités vh et vw sont similaires, à la seule différence qu’elles dépendent respectivement de la hauteur et de la largeur de la fenêtre de navigation.
+
+Retenez que 1 vh = 1 % de la hauteur du viewport et que 1 vw = 1 % de la largeur du viewport.
+
+L’unité de mesure vh est généralement utilisée pour permettre à un élément de s’adapter à la hauteur totale de la fenêtre
+
+
+        </p> <br><br>
+
+
+
+
+</body>
+
+</html>
