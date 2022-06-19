@@ -1,0 +1,30 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #cddc39;
+    text-align:center;
+    font-size:16px;
+
+
+}
+
+h1 {
+
+    color:#cddc39;
+    font-size:18vw;
+    text-transform:uppercase;
+    text-shadow: 2px 0 0 #ffff6e, -2px 0 0 #ffff6e, 0 2px 0 #ffff6e, 0 -2px 0 #ffff6e, 1px 1px #ffff6e, -1px -1px 0 #ffff6e, 1px -1px 0 #ffff6e, -1px 1px 0 #ffff6e;
+}
+
+p {
+
+    width:80vw;
+    margin:20px auto;
+    text-align:justify;
+}
