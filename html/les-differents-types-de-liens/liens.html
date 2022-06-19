@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les liens</title>
+    <link rel="stylesheet" href="liens.css">
+</head>
+
+<body>
+
+    <div id="top"></div>
+
+    <h1>Les différents types de liens</h1>
+
+    <div id="remplissage"></div>
+
+    <h2>Définir un lien</h2>
+
+    <p>
+        Les liens hypertextes sont définis à l'aide de l'élément  a. Le texte de cet élément constitue la zone sur
+            laquelle cliquer pour exécuter un lien :
+            <a href="adresse de destination">Nom du lien</a> <br><br>
+
+                L'adresse de destination peut être une URL ou bien un nom de fichier situé sur le même serveur. Dans ces
+                deux cas on parle de lien externe. Mais un lien peut aussi diriger vers un marqueur, ou une étiquette,
+                situé dans la même page. Il s'agit alors d'un lien interne. <br><br>
+
+                Les liens pointent souvent vers d'autres documents HTML mais ce n'est pas obligatoire. On peut diriger
+                un lien vers n'importe quel type de document. Le navigateur lance alors le "visualiseur" adapté ou bien
+                propose d'enregistrer le fichier sur le disque local. <br><br>
+
+                Ces deux types de liens vont être l’objet d’enjeux et d’implications différents en termes d’optimisation
+                du référencement (SEO) et vont pouvoir être créés de façons différentes en HTML. <br><br>
+
+                Quel que soit le type de liens que l’on souhaite créer en HTML (liens internes, des liens externes, ou
+                des liens vers un autre endroit d’une même page), nous utiliserons toujours l’élément a qui est
+                l’abréviation de « anchor » ou « ancre » en français accompagné de son attribut href pour « hypertext
+                reference » ou « référence hypertexte » en français.</p>
+
+    <p>Lien vers une URL externe</p>
+    <a href="https://www.apple.com/fr/mac/">Lien vers le site d'apple</a>
+
+
+    <p>lien interne à notre "site"</p>
+    <a href="notresuperlien.html">Lien vers notre super lien</a>
+
+    <p>Lien vers un sous dossiers</p>
+    <a href="/html/les balises/balises.html" target="blank">Lien vers balise.html</a>
+
+    <p>Lien vers une URL externe qui s'ouvre dans un nouvel onglet</p>
+    <a href="https://www.apple.com/fr/mac/" target="blank">Lien vers le site d'apple</a>
+
+    <p>Création de lien dans la même pahe html</p>
+    <a href="#top">Lien vers le haut de page</a>
+
+    <p>Création de lien vers un e-mail</p>
+    <a href="mailto:hello@romuadcrochat.fr">Envoyez moi un email</a>
+
+    <p>Création de lien vers un numéro de téléphone</p>
+    <a href="tel:+33612345678">06 12 34 56 78</a>
+
+    <p>Lien vers un document PDF</p>
+    <a href="pdf/Cirq'O Sablon Mai.pdf">Une bien belle affiche</a>
+
+    <p>Telecharger un document PDF</p>
+    <a href="pdf/Cirq'O Sablon Mai.pdf" download="Cirq'Sablon Mai.pdf">Une toujours bien belle affiche</a>
+
+
+</body>
+
+</html>
