@@ -1,0 +1,64 @@
+main{
+
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-around;
+    font-size:25;
+}
+
+div {
+
+    background-color: red;
+    width:30%;
+    height: 300px;
+    margin:30px auto;
+}
+
+#divone {
+
+
+    border: solid 15px;
+
+}
+
+#divtwo {
+
+    border: dashed green 15px;
+   
+}
+
+#divthree {
+
+    border: double #32a1ce 15px;
+
+    
+}
+
+#divfour {
+
+    border: 4mm ridge rgba(170, 50, 220, .6);
+  
+}
+
+#divfive {
+
+    border-radius:20px;
+   
+}
+
+#divsix {
+
+    border-radius:40px 0;
+    padding: 15px;
+
+
+}
+
+#divseven {
+
+    border-radius:50%;
+    width:300px;
+ 
+
+    
+}
