@@ -1,0 +1,61 @@
+.maclasse {
+
+
+width:80%;
+margin:20px auto; /* s'écrit également 20px auto 20px auto, les valeurs se placent dans le sens des aiguilles d'une montre */
+
+}
+
+#one {
+
+    background-color: red;
+    
+}
+
+#two {
+
+    background-color: green;
+    padding:1px;
+}
+
+#three {
+
+    background-color: purple;
+    padding:1px;
+}
+
+#four {
+
+    background-color: brown;
+    padding:1px;
+}
+
+.classdiv {
+
+    width: 90%;
+    height:100px;
+    margin:20px auto; 
+
+ 
+ 
+}
+
+#divone {
+
+    background-color: brown;
+}
+
+#divtwo {
+
+    background-color: yellow;
+}
+
+#divthree {
+
+    background-color: blue;
+}
+
+#divfour {
+
+    background-color: green;
+}
