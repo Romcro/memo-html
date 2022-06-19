@@ -1,0 +1,135 @@
+/* OTHER STYLES */
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: linear-gradient(135deg, #b04, #f80) fixed;
+}
+
+
+main {
+    max-width: 90vw;
+    margin: 0 auto;
+  
+
+}
+
+section {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+
+
+    padding: 1vw;
+    background-color: rgba(255, 0, 0, 0.25);
+    text-align: center;
+    border: 1px solid white;
+    background-color: solid #fff;
+    color: #fff;
+    margin: .5vw;
+    /* La propriété flex-grow indique à flexbox la façon dont il doit augmenter 
+    la taille de l’item pour occuper plus d’espace si nécessaire. La propriété flex-shrink 
+    indique à flexbox comment réduire cette taille si nécessaire. Comme nous voulons
+     que nos colonnes se comportent de la même façon lorsqu’elles s’agrandissent ou se 
+     rapetissent, donnons à nos deux propriétés la valeur 1. */
+     flex-grow: 1;
+     flex-shrink: 1;
+     flex-basis:0;  /* va permettre de garder la taille même si texte */
+   
+    
+
+}
+
+/* Vous avez remarqué que les colonnes ne s’alignent pas ? 
+C’est parce que flexbox inclut le padding, les bordures et les marges dans le basis 
+lorsqu’il calcule la taille que devrait faire l’item.
+
+La première et la deuxième colonne de la deuxième rangée sont séparées par 22 pixels
+ (20px pour la gouttière et 2px pour les bordures). Nous pouvons ajouter cet espace 
+ manquant dans la première colonne de la première rangée en fixant flex-basis à 22px. */
+
+.section-5 :nth-child(1) {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 5.1vw;
+  }
+
+  .section-6 :nth-child(2) {
+    flex-grow: 4;
+    flex-shrink: 4;
+    flex-basis: 11.2vw;
+  }
+
+  .section-7 {
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-7 :nth-child(1) {
+
+    min-width:29vw;
+    max-width:29vw;
+
+  }
+
+  .section-8 {
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .section-8 :nth-child(1) {
+
+    min-width:29vw;
+    max-width:29vw;
+
+
+  }
+   
+  
+
+@media (max-width: 1024px) {
+
+body {
+
+    background: green;
+}
+
+section {
+
+    flex-direction: column;
+}
+
+.column {
+
+
+    padding: 1vw;
+    background-color: rgba(255, 0, 0, 0.25);
+    text-align: center;
+    border: 1px solid white;
+    background-color: solid #fff;
+    color: #fff;
+    margin: .5vw;
+    /* La propriété flex-grow indique à flexbox la façon dont il doit augmenter 
+    la taille de l’item pour occuper plus d’espace si nécessaire. La propriété flex-shrink 
+    indique à flexbox comment réduire cette taille si nécessaire. Comme nous voulons
+     que nos colonnes se comportent de la même façon lorsqu’elles s’agrandissent ou se 
+     rapetissent, donnons à nos deux propriétés la valeur 1. */
+     flex-grow: 1;
+     flex-shrink: 1;
+   
+    
+
+}
+
+}
