@@ -1,0 +1,55 @@
+li {
+
+    line-height: 25px;
+}
+
+.div1 {
+
+    text-align: center;
+}
+
+.btn-hover {
+
+    background-color:red;
+    width:30%;
+    height: auto;
+    padding: 15px;
+    text-decoration:none;
+    color:#fff;
+    display: block;
+    margin: 0 auto 35px auto;
+    
+
+}
+/* LA TRANSFORMATION*/
+.btn-hover:hover {
+
+    background-color:purple;
+
+
+}
+
+.btn-hover-2 {
+
+    background-color:yellow;
+    width:30%;
+    height: auto;
+    padding: 15px;
+    text-decoration:none;
+    color:blue;
+    margin-bottom:35px;
+    display: block;
+    margin: 0 auto 35px auto;
+    
+
+}
+/* LA TRANSFORMATION*/
+.btn-hover-2:hover {
+
+width:50%;
+border-radius:30px;
+
+}
+
+
+
