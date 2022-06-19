@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position et Z-index</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<body>
+
+    <div class="fixed">
+        <p class="white">Z-index:2;</p>
+    </div>
+
+    <main>
+
+        <h1>La propriété position définit la façon dont un élément est positionné dans un document. </h1>
+
+
+        <h2>Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné.</h2>
+
+        <h2>Oui il y'a un carré rouge derrière mon texte, vous comprendrez pourquoi au 2ème exemple</h2>
+
+        <h2>Le positionnement static: </h2>
+
+        <p>est celui reçu par défaut par chaque élément — cela veut tout simplement dire « positionner l'élément selon
+            le cours normal de placement — rien de spécial à voir ici, il s'agit de la valeur par défaut que nous ne
+            tapons jamais.</p>
+
+        <h2>Exemple 1: Position fixed.</h2>
+
+
+        <p>Vous voyez cette jolie bande bleue internet des années 90 figé au dessus de notre contenu? Et bien il s'agit
+            d'une div en position:fixed. Je lui ai rajouté la propriété top:0px afin qu'elle soit en haut de notre page.
+            Elle posséde également une propriété z-index que je vous expliquerai plus bas.</p>
+
+        <h2> Exemple 2: position relative</h2>
+
+
+        <p> En premier lieu nous créons 3 div ayant toutes les 3 les memes propriétes. Ensuite nous ajoutons à la div
+            qui à une bordure bleu la propriété position:relative+ top:60px+ left:30px <br><br> Elle va donc se décaler
+            à 60px du haut de sa position initiale, et 30px de la gauche. C'est un peu comme lui donner un margin pour
+            la décaler.</p>
+
+        <h2>Mais d'ailleurs pourrait t'on avoir le même résultat en appliquant la propriété margin à cet élement???</h2>
+        <p>Et bien... OUI partiellement. Cependant en CSS, on défini que margin est une propriété qui donne de l'espace
+            entre des élements, pour des design plus spécifiques comme ici, on préferera utiliser position</p>
+
+
+        <section class="section-1">
+
+            <div class="div-ex-1"></div>
+            <div class="div-ex-1 relative"></div>
+            <div class="div-ex-1"></div>
+
+        </section>
+
+
+
+        <h2> Exemple 3: position absolute</h2>
+
+        <p>Reprenons grosso modo la même configuration et changeons juste notre relative en absolute. Mais où est la div
+            centrale? Vous vous souvenez de la div située derrière le texte? et bien c'est celle ci. <br><br>
+            Elle est allée se poser à 60px du top, et 30px de la gauche. <strong>La différence entre position absolue et
+                position relative est à la façon dont la position est définie. Pour une div en position relative, elle
+                est calculée d'après sa position originale dans la page.</strong> </p>
+
+        <section class="section-2">
+
+            <div class="div-ex-2"></div>
+            <div class="div-ex-2 absolute"></div>
+            <div class="div-ex-2"></div>
+
+        </section>
+
+
+    </main>
+
+    <h2>Vous reprendrez bien encore un peu de position?</h2>
+
+    <h2>Et bien voici ma preferée, sticky ( collant), ce qui me permettra de vous faire comprendre z-index </h2>
+
+    <h2>Montez la div suivante jusqu'en haut de votre écran</h2>
+
+
+    <div class="sticky">
+        <p class="white">Z-index1</p>
+    </div>
+
+    <div class="remplissage"></div>
+
+    <h2>Voici notre div collée en haut de notre écran, super mais pourquoi est t'elle derrière notre div bleu?</h2>
+
+    <p>Et bien à cause de propriété z-index. La div bleu à un z-index: 2; et notre div grise de z-index: 1;</p>
+
+    <h2>Z-index va nous permettre de définir un ordre de priorité</h2>
+
+    <p>pour info la div rouge derriére le texte à un z-index:-1; et oui, cela marche aussi avec des valeurs négative</p>
+
+
+
+    <p>Voyons maintenant comment se comporte les div suivante une fois collée en haut de l'écran.</p>
+
+    <div class="sticky two">
+        <p class="white">Z-index3</p>
+    </div>
+    <div class="remplissage"></div>
+    <div class="sticky two">
+        <p class="white">Z-index4</p>
+    </div>
+    <div class="remplissage"></div>
+    <div class="sticky three">
+        <p class="white">Z-index5</p>
+    </div>
+    <div class="remplissage"></div>
+    <div class="sticky four">
+        <p class="white">Z-index6</p>
+    </div>
+    <div class="remplissage"></div>
+    <div class="sticky five">
+        <p class="white">Z-index7</p>
+    </div>
+    <div class="remplissage"></div>
+    <div class="sticky six">
+        <p class="white">Z-index8</p>
+    </div>
+    <div class="remplissage"></div>
+
+    <p> Nos div sont allée se coller les une aprés les autres en haut de l'écran et se sont superposés. Entrainez vous en
+        décortiquant le CSS de cette fiche mémo.</p>
+
+    <div class="remplissage"></div>
+
+
+
+</body>
+
+</html>
