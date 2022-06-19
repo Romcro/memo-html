@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balises HTML</title>
+</head>
+
+<body>
+
+    <h1>Les balises HTML</h1>
+    <p>Nous allons voir maintenant les balises les plus courantes que vous pourrez rencontrer. Il s’agit d’une liste
+        concise, mais ce sont celle qui vous serviront le plus souvent pour structurer vos design. Nous allons donc
+        pratiquer directement dans notre document créé précédemment.
+    </p>
+
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element" target="blank">Voici un lien vers la totalité des
+        balises et élements</a>
+
+    <p>Si vous en avez besoin vous pouvez écrire dans votre fichier un commentaire qui n’apparaitra pas pour
+        l’utilisateur de la manière suivante: </p>
+
+    <img src="images/Capture d’écran 2020-12-06 à 17.10.59.png" alt="">
+
+    <p>Une différence notable a faire tout de suite. Vous rencontrerez beaucoup de site créer sans une bonne
+        sémantique. Est ce qu’ils fonctionnent? Bien entendu et même souvent très bien. Mais s’agit il d’une bonne
+        pratique aidant au bon référencement et respectant les bons critéres d'accessibilté? La réponse sera souvent
+        non. C’est pour cela que dés à présent nous
+        parlerons de sémantique et de bonnes pratiques. </p>
+
+    <h2>Savoir coder proprement fera de vous un meilleur designer.</h2>
+
+
+    <h2>Les balises HTML respectent une syntaxe simple et stricte :</h2>
+
+
+    <ul>
+        <li>Un chevron ouvrant <em>
+                < </em> </li> <li>Le nom de la balise (ex:section)</li>
+        <li>Des attributs (optionnels). Un espace, suivi du nom de l'attribut, d'un signe égal (=) et d'une valeur entre
+            doubles quotes (“") (ex=class, id, target, aria-label).</li>
+        <li>Un chevron fermant > </li>
+        <li>Un slash quand il s’agit de la balise fermante (/)</li>
+    </ul>
+
+    <p>Un élément HTML se compose d'une balise ouvrante, d'un contenu textuel et d'une balise fermante :</p>
+
+    <img src="images/Capture d’écran 2020-12-06 à 17.25.02.png" alt="">
+
+    <p>Généralement, les balises fonctionnent par paires. La première balise est la balise ouvrante et la seconde est la
+        balise fermante. Une balise fermante doit avoir le même nom que la balise ouvrante correspondante. De plus, une
+        balise fermante doit contenir une barre oblique (slash) entre le chevron initial et le nom de la balise:</p>
+    <h2>CE SONT LES BALISES EN PAIRES</h2>
+
+    <h3>Cependant certaines balises font exception: l'exemple le plus flagrant est la balise img (images)</h3>
+
+    <h2>Il s’agit des balises dite “orpheline” ou “auto-fermante”.</h2>
+
+    <img src="images/Capture d’écran 2020-12-06 à 20.50.28.png" alt="">
+
+    <h2>3 modes d’affichage pour les éléments html:</h2>
+
+    <ol>
+        <li> Bloc / block <br>
+
+            Occupe toute la largeur disponible. Lorsque 2 éléments blocs se suivent dans une page, ils sont positionnés
+            (par défaut) l'un sous l'autre.
+            Exemple typique d'élément bloc : l'élément p (le paragraphe).</li> <br>
+        <li>
+
+            En-ligne / inline <br>
+
+            N'occupe que la largeur indispensable à l'affichage du contenu et ne provoque pas de retour à la ligne.
+            Lorsque 2 éléments en-ligne se suivent dans une page, ils sont positionnés l'un à côté l'autre (si la
+            largeur de page le permet).
+            Exemple typique d'élément en-ligne : l'élément a (lien).
+        </li> <br>
+        <li>
+
+            Invisible / not displayed <br>
+
+            Certains éléments ne servent qu'à apporter des informations invisibles pour l'internaute.
+            Exemple typique d'élément non affiché : l'élément
+            meta.
+        </li>
+    </ol>
+
+    <h2>Les élements sectionnants</h2>
+
+    <ul>
+        <li> header: <br>à ne pas confondre avec la balise head. Il s’agit de l’en-tête visible par votre utilisateur.
+            Il peut contenir des éléments de titre, mais aussi d'autres éléments tels qu'un logo, un formulaire de
+            recherche, etc.
+        </li> <br> <br>
+
+        <li> main: <br> représente le contenu majoritaire du body. Le contenu principal de la zone est constitué de
+            contenu directement en relation, ou qui étend le
+            sujet principal du document ou de la fonctionnalité principale d'une application.
+        </li> <br>
+
+        <h3> main ne contiendra pas necessairement un titre dedié</h3> <br>
+
+
+        <li> nav <br> Lien principaux de navigations.  représente une section d'une page ayant des liens vers d'autres
+            pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un
+            document (avec des menus, des tables des matières, des index, etc.).</li> <br> <br>
+
+        <li> section: <br> section de page.  
+        </li> <br>
+
+        <h3>Une section doit toujours contenir un titre. </h3> <br>
+
+        <li> article: <br>Contenu autonome. Ce contenu est prévu pour être distribué ou réutilisé indépendamment. </li>
+        <br>
+        <h3>Un article doit toujours contenir un titre. </h3>
+
+
+        <h4>Un article peut contenir plusieurs sections et une section peut contenir plusieurs articles. Aussi pour une
+            meilleure compréhension dans notre apprentissage nous utiliserons article pour composer des sections mais
+            selon vos besoins vous pourrez faire varier le squelette de votre stucture.</h4> <br>
+        <li> footer: <br> pied de page. Contient habituellement des informations sur l'auteur du site, les données
+            relatives au droit d’auteur les mentions légales et CGV ou les liens vers d'autres documents en relation.
+
+
+        </li>
+    </ul>
+
+    <h2>Les balises de contenu textuel les plus utilisés:
+    </h2>
+
+    <ul>
+        <li> div: <br>(qui signifie division du document) est un conteneur générique qui permet d'organiser le contenu
+            sans représenter rien de particulier. Il peut être utilisé afin de grouper d'autres éléments pour leur
+            appliquer un style (en utilisant des attributs ). Il doit uniquement être utilisé lorsqu'aucun autre élément
+            sémantique n'est approprié.
+        </li>
+        <li> p: <br>représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et
+            séparés par un espace vertical, leur première ligne est également parfois indentée. Les paragraphes sont des
+            éléments blocs.
+        </li>
+        <li>blockquote: <br>indique que le texte contenu dans l'élément est une citation longue. Le texte est
+            généralement affiché avec une indentation.  Une URL indiquant la source de la citation peut être donnée
+            grâce à l’attribut cite tandis qu'un texte représentant la source peut être donné via l'élément cite. Utile
+            pour les citations ou témoignages.
+        </li>
+
+        <h3>Exemple:</h3>
+        <img src="" alt="">
+
+        <img src="images/Capture d’écran 2020-12-06 à 21.03.15.png" alt="">
+
+
+        <li> ol: <br>représente une liste ordonnée. Les éléments d'une telle liste sont généralement affichés avec un
+            indicateur ordinal pouvant prendre la forme de nombres, de lettres, de chiffres romains ou de points. La
+            mise en forme de la numérotation n'est pas utilisée dans la description HTML mais dans la feuille de style
+            CSS associée grâce à la propriété list-style-type.
+        </li>
+        <li> ul: <br>représente une liste d'éléments sans ordre particulier. Il est souvent représenté par une liste à
+            puces.</li>
+        <li> li: <br>Ce contenu est prévu pour être distribué ou réutilisé indépendamment, notamment au sein d'une
+            liste.
+        </li>
+        <li> hr: <br>représente un changement thématique entre des éléments de paragraphe (par exemple, un changement de
+            décor dans un récit, un changement de sujet au sein d'une section). Sera symbolisé par défaute par une ligne
+            noire.
+        </li>
+    </ul>
+
+
+    <h2>Les balises de texte en ligne:</h2>
+
+    <ul>
+        <li>a: <br>ancre, permet de créer un lien sortant ou permet de spécifier un point précis de la page vers lequel
+            on veut diriger un lien.</li>
+        <li> span: <br>utilisé pour marquer l'importance particulière d'une portion de texte. Tous les navigateurs
+            actuels afficheront cette portion en gras. Nous pourrons également l’utiliser pour une mise en forme CSS
+            particulière.
+        </li>
+        <li>strong: <br>utilisé pour marquer l'importance particulière d'une portion de texte. Tous les navigateurs
+            actuels afficheront cette portion en gras.</li>
+        <li>em: <br>utilisé pour accentuer l'importance d'une portion de texte (de façon moins forte que strong). Tous
+            les navigateurs actuels afficheront cette portion en italique.
+        </li>
+        <li>br: <br>saut de ligne. Voilà un cas tout à fait particulier d'élément en-ligne, qui provoque un saut de
+            ligne. Malgré cette particularité, br n'est définitivement pas un bloc et doit être classé comme élément
+            en-ligne.</li>
+    </ul>
+
+    <h3>ATTENTION: br sera a utiliser pour revenir à la ligne mais pas pour espacer des éléments entre eux. Pour cela
+        nous utiliserons la propriété CSS line-height.
+    </h3>
+
+    <h2>Même si certaines de ces balises modifient la vue que nous pouvons avoir de morceaux de paragraphes dans notre
+        naviguateur nous utiliserons des propriétes CSS pour modifier du texte. Il s'agit juste d'indiquer au
+        naviguateur que ces élements sont a analyser différement du reste du texte</h2>
+
+
+</body>
+
+</html>
